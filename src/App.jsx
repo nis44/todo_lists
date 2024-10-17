@@ -24,7 +24,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    const todos = JSON.parse(localStorage.getItem("todos "))
+    const todos = JSON.parse(localStorage.getItem("todos"))
 
     if (todos && todos.length > 0) {
       setTodos(todos)
@@ -57,6 +57,8 @@ const App = () => {
         </div>
       </div>
     </div>
+    console.log(todos);
+    
     </TodoContextProvider>
   );
 };
